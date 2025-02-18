@@ -8,12 +8,23 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/CounterText"
+        android:layout_width="233dp"
+        android:layout_height="158dp"
         android:text="Szia Uram!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/PressMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPressMebuton"
+        android:text="@string/nyomj_meg"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="431dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.mobil_megoldasok_01;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +11,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    Integer Counter;
+    private TextView mainText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +25,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        mainText = findViewById(R.id.CounterText);
+
+        Counter = 0;
     }
 
-    public void onPressMebuton(View view) {
+    public void onPressMebutton(View view) {
+        Counter++;
+
+        mainText.setText(Counter.toString());
+
     }
 }

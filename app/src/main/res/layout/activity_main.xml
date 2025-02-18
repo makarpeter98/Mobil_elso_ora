@@ -25,7 +25,7 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="201dp"
         android:layout_marginEnd="126dp"
-        android:onClick="onPressMebuton"
+        android:onClick="onPressMebutton"
         android:text="nyomj meg!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
